@@ -1,0 +1,45 @@
+/* body {
+    background-image:  url(images/captown.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: #8a045b;
+    background-blend-mode: screen;
+} */
+body > #bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 211, 248);
+    clip-path: polygon(
+    100% 0%,
+    100% 10%,
+    50% 100%,
+    0% 100%,
+    0% 0%
+    );
+    position: absolute;
+    z-index: -1;
+    
+   
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat((4, 1fr));
+    gap: 20px; 
+}
+.testimonial:last-child {
+    background: red !important;
+    grid-column-start: 4;
+    grid-row: 1/3;
+   
+}
+.testimonial:nth-child(3) {
+    background: red !important;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
