@@ -7,3 +7,10 @@ buttonB.onclick  = () => {
     buttonB.textContent = "Try me";
     headingB.textContent = "1 Click so far";
 }
+
+
+var myName = "Billy"
+
+let myName = "Eddo"
+
+const myName= "SDt"
