@@ -1,0 +1,82 @@
+/* @media screen and (min-width:768px){
+
+#menu{
+    display:none;
+}
+
+.navigation{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:2rem;
+}
+
+.navigation a{
+    display:block;
+}
+
+.gallery{
+    grid-template-columns:repeat(3,1fr);
+}
+
+header{
+    display:grid;
+    grid-template-columns:;
+    align-items:center;
+    padding:1rem 2rem;
+}
+
+} */
+
+@media screen and (max-width:768px){
+
+    header{
+        width: 100%;
+       
+      
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+    #menu{
+        display:block;
+    }
+
+    .navigation{
+       
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#183153;
+        margin-top:1rem;
+        
+    }
+
+    .navigation.open{
+        display:flex;
+    }
+
+    .navigation a{
+        padding:1rem;
+        text-align:center;
+        font-size: 2rem;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media screen and (max-width:480px){
+    h1{
+        width: 100%;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*banze Billy*\
