@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Democratic Republic of the Congo | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+
+    <meta name="description" content="A country page about the Democratic Republic of the Congo for WDD 131.">
+    <meta name="author" content="Mulopwe Banze Billy">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>DRC Republic of Congo</h1>
+        <button id="menu" aria-label="Open navigation menu"></button>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Data</a>
+            <a href="#">Weather</a>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <picture class="hero">
+
+            <source
+                media="(min-width:768px)"
+                srcset="images/congo-banner.webp">
+
+            <img
+                src="images/congo-small.webp"
+                alt="Beautiful landscape of the Democratic Republic of the Congo">
+
+        </picture>
+        
+
+        <div class="content">
+
+          
+            <section class="card data">
+
+                <h2>Data</h2>
+
+                <p><strong>Capital:</strong> Kinshasa</p>
+
+                <p><strong>Official Language:</strong> French</p>
+
+                <p><strong>Population:</strong> 111,000,000</p>
+
+                <p><strong>Area:</strong> 2,345,409 km²</p>
+
+                <p><strong>Currency:</strong> Congolese Franc (CDF)</p>
+
+                <p><strong>Time Zone:</strong> UTC +1 / UTC +2</p>
+
+                <p><strong>Continent:</strong> Africa</p>
+
+            </section>
+
+     
+            <section class="card weather">
+
+                <h2>
+                    Weather
+                    <img
+                        class="weather-icon"
+                        src="images/weather.svg"
+                        alt="Weather Icon">
+                </h2>
+
+                <p><strong>Temperature:</strong>
+                    <span id="temperature">8</span>°C
+                </p>
+
+                <p><strong>Conditions:</strong>
+                    Cloudy
+                </p>
+
+                <p><strong>Wind Speed:</strong>
+                    <span id="windSpeed">15</span> km/h
+                </p>
+
+                <p><strong>Humidity:</strong>
+                    65%
+                </p>
+
+                <p><strong>Wind Chill:</strong>
+                    <span id="windChill"></span>
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            🌍 Mulopwe Banze Billy | South Africa
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+</body>
+</html>

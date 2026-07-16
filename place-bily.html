@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Template</title>
+    <!-- Linked CSS files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JavaScript linked with defer -->
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <!-- Semantic Main Content -->
+    <main>
+        
+        <!-- Responsive hero image using <picture> -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 601px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp" alt="Scenic landscape" width="1200" height="400">
+            </picture>
+            <h1>Welcome to Our Site</h1>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-info">
+            <h2>Current Weather</h2>
+            <!-- Mobile weather SVG icon -->
+            <svg class="weather-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v2M4.93 4.93l1.41 1.41M20 12h2M19.07 4.93l-1.41 1.41M12 18v-2M4.93 19.07l1.41-1.41M17.66 17.66l1.41 1.41M4.5 12h-2M12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5z"></path>
+            </svg>
+            <p>Temperature: <span id="temp">--°C</span></p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+
+    </main>
+
+    <!-- Semantic Footer with JavaScript hook -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> My Website. All rights reserved.</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

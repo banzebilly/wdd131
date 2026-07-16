@@ -1,32 +1,4 @@
-/* @media screen and (min-width:768px){
 
-#menu{
-    display:none;
-}
-
-.navigation{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    gap:2rem;
-}
-
-.navigation a{
-    display:block;
-}
-
-.gallery{
-    grid-template-columns:repeat(3,1fr);
-}
-
-header{
-    display:grid;
-    grid-template-columns:;
-    align-items:center;
-    padding:1rem 2rem;
-}
-
-} */
 
 @media screen and (max-width:768px){
 
@@ -51,6 +23,14 @@ header{
         background:#183153;
         margin-top:1rem;
         
+    }
+
+    .weather-icon{
+    display:none;
+    }
+
+    .weather h2::after{
+        content:" ⛅";
     }
 
     .navigation.open{
