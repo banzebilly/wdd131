@@ -12,6 +12,23 @@
 //  https://devdocs.io/javascript/)
 
 // https://cloudconvert.com/png-to-webp
+//Given the following code snippet, which of the following is the output to the console?
+
+let scores = [100, 72, 83, 94, 88, 87];
+let accumulator = 0;
+let count = 0;
+scores.forEach(score => {
+  if (score > 87) {
+    accumulator += score;
+    count ++;
+  }
+});
+if ( count > 0 ) {
+  console.log(accumulator/count); 
+} else {
+  console.log("No scores reported.");
+}
+
 
 
 const foo = () => {
