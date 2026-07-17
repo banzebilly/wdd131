@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning to manipulate dom element</title>
+    <style>
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+       main {
+            max-width: 400px;
+            margin: 10% auto;
+            background: grey;
+            min-height: 200px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+            background: red;
+            
+            color: white;
+            grid-column: 1 / -1;
+
+           
+        }
+        #increase {
+            padding-bottom: 2rem;
+            text-align: center;
+            background: red;
+            
+            color: white;
+           
+          
+           background: blue;
+           padding: 1rem 2rem;
+           border-radius: 3px;
+           cursor: pointer;
+           border: none;
+           
+
+        }
+        #decrease {
+            text-align: center;
+            background: black;
+          
+            color: white;
+         
+           
+           background: red;
+           padding: 1rem 2rem;
+           border-radius: 3px;
+           cursor: pointer;
+           border: none;
+           font-size: 1.3rem;
+           font-weight: 700;
+
+           
+        }
+        
+       
+        
+    </style>
+</head>
+<body>
+    <main>
+         <h1 id="count">0</h1>
+         <button id="increase">+</button>
+         <button id="decrease">-</button>
+        </main>
+
+
+
+
+    <script defer>
+
+        // const btn=document.getElementById("btn");
+        // btn.textContent="click me"
+
+        // btn.addEventListener("click", function() {
+        //     alert("helo billy")
+        // })
+        // let title = document.querySelector(".title");
+        // title.textContent = "Banze Billy";
+        // title.style.color="red";
+        // title.style.backgroudColor="blue";
+
+        //create html element
+        // const p = document.createElement("p")l;
+        // p.textContent = "welcome to new paragraph";
+        // document.body.header.appendChild(p);
+        // p.style.color = "red"
+
+        // let count = 0;
+        // const heading = document.getElementById("count");
+
+        // document.getElementById("increase").addEventListener("click", () => {
+        //     count++;
+        //     heading.textContent = count;
+        // })
+        // document.getElementById("decrease").addEventListener("click", () => {
+        //     count--;
+        //     heading.textContent = count;
+        // })
+
+
+        // a better way is
+        const increaseBtn = document.getElementById("increase");
+        const decreaseBtn = document.getElementById("decrease");
+        const heading = document.getElementById("count");
+
+        let count = 0;
+
+        increaseBtn.addEventListener("click", () => {
+            count++;
+            heading.textContent = count;
+        });
+
+        decreaseBtn.addEventListener("click", () => {
+            count--;
+            heading.textContent = count;
+    });
+
+
+
+    </script>
+</body>
+</html>
