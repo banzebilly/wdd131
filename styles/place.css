@@ -29,18 +29,15 @@ header, main, footer{
 }
 
 header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
 
     background:var(--dark);
 
     color:white;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    align-items:center;
-    padding: 1rem 1rem;
-
+    
     gap: 1.5rem;
 
     min-height:40px;
@@ -65,28 +62,28 @@ header h1::after{
     margin-left:8px;
     vertical-align:middle;
 }
-#menu{
-    border:none;
-    background:none;
-    /* color:white;
-    font-size:2rem;
-    cursor:pointer; */
+#menu {
+    display: none;
+    border: none;
+    background: none;
 }
+
 
 #menu::before{
     content:"☰";
 }
-#menu.open::before{
-    content:"X";
+#menu.open::before {
+    content: "\00D7";
 }
 
-nav{
-    display:flex;
-    align-items: center;
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
     
 }
 
-nav a{
+.navigation a{
     text-decoration:none;
     color:white;
     font-weight:500;
@@ -183,14 +180,13 @@ main{
 
 
 
-.weather h2{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:.7rem;
+.weather h2 {
+    position: relative;
+    text-align: center;
 }
-
 .weather-icon{
+    
+    display: inline-block;
     width:42px;
 }
 

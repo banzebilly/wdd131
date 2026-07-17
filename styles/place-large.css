@@ -4,7 +4,7 @@
 
     header{
         width: 100%;
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: 1fr auto;
 
     }
     header h1{
@@ -12,20 +12,22 @@
     }
 
     #menu{
-        display:block;
-        color: var(--light);
+        display: block;
+        justify-self: end; /* Push menu to the far right */
         font-size: 2rem;
-        padding: 0;
+        color: var(--light);
         
 
     }
-    .navigation{
+   .navigation {
+        grid-column: 1 / -1; /* Span both columns */
         display: none;
         flex-direction: column;
         width: 100%;
-        background: var(--dark);
         margin-top: 1rem;
     }
+
+   
      .navigation a{
         padding:1rem;
         text-align:left;
@@ -52,8 +54,36 @@
     .data strong, .weather strong , p strong{
         font-size: 1.4rem;
     }
+   
+
+    .weather-icon {
+        display: inline-block;
+        width: 42px;
+    }
+
+    .weather h2::after {
+        content: "";
+    }
 
 
 
 
 } 
+
+@media screen and (min-width: 768px) {
+
+    .weather-icon {
+        display: none;
+    }
+
+  
+
+    .weather h2::after {
+        content: " ⛅";
+        
+        
+        
+    }
+
+}
+   
