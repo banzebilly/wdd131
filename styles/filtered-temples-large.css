@@ -16,7 +16,7 @@
         color: var(--light);
     }
 
-    .navigation{
+    nav{
        
         display:none;
         flex-direction:column;
@@ -34,11 +34,11 @@
         content:" ⛅";
     }
 
-    .navigation.open{
+    nav.open{
         display:flex;
     }
 
-    .navigation a{
+    nav a{
         padding:1rem;
         text-align:center;
         font-size: 2rem;

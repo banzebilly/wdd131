@@ -41,21 +41,20 @@ header {
     content: "✖";
 }
 
-nav,
-.navigation {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.navigation a {
+nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
 
-.navigation a:hover {
+nav a:hover {
     color: gold;
 }
 
