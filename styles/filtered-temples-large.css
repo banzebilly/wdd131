@@ -1,0 +1,63 @@
+
+
+@media screen and (max-width:768px){
+
+    header{
+        width: 100%;
+       
+      
+    }
+    h2{
+        font-size: 2rem;
+    }
+
+    #menu{
+        display:block;
+        color: var(--light);
+    }
+
+    .navigation{
+       
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#183153;
+        margin-top:1rem;
+        
+    }
+
+    .weather-icon{
+    display:none;
+    }
+
+    .weather h2::after{
+        content:" ⛅";
+    }
+
+    .navigation.open{
+        display:flex;
+    }
+
+    .navigation a{
+        padding:1rem;
+        text-align:center;
+        font-size: 2rem;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media screen and (max-width:480px){
+    h1{
+        width: 100%;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*banze Billy*\

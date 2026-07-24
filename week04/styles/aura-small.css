@@ -1,0 +1,353 @@
+/* ==========================================================
+   TABLETS & SMALL LAPTOPS (992px)
+========================================================== */
+
+@media screen and (max-width: 992px) {
+
+    /* Header */
+
+    header {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    nav a {
+        padding: 1rem .8rem;
+        font-size: 1rem;
+    }
+
+    /* Hero */
+
+    .hero {
+        height: 55vh;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* Benefits */
+
+    .benefit {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .card-benefit {
+        position: static;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    /* Services */
+
+    .short-dev {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .short-menu {
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+    }
+
+    /* Gallery */
+
+    .grid-gallery {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid-gallery .gallery-img img {
+        max-width: 100%;
+    }
+
+
+    /* ==============sevices menu==================== */
+    services-menu .card-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    services-menu {
+        padding: 2rem;
+    }
+    /* Footer */
+
+    footer .info {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE DEVICES (768px)
+========================================================== */
+
+@media screen and (max-width:768px){
+
+    header,
+    main,
+    footer{
+        width:100%;
+    }
+
+    /* Header */
+
+    header{
+        grid-template-columns:1fr auto;
+        padding:0 1rem;
+    }
+
+    .logo{
+        width:170px;
+    }
+
+    .button{
+        display:block;
+        justify-self:end;
+        align-self:center;
+    }
+
+    #menu{
+        border:none;
+        background:none;
+        color:var(--accent);
+        font-size:2rem;
+        cursor:pointer;
+    }
+
+    nav{
+        display:none;
+        grid-column:1/-1;
+        flex-direction:column;
+        background:var(--orange);
+        width:100%;
+    }
+
+    .navigation.open{
+        display:flex;
+    }
+
+    .navigation a{
+        width:100%;
+        padding:1rem;
+        border-bottom:1px solid rgba(0,0,0,.08);
+        text-align:left;
+        font-size:1rem;
+    }
+
+    /* Hero */
+
+    .hero{
+        height:70vh;
+
+        background-image:url("../images/deep-tissue-5.webp");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+    .hero-video{
+        display:none;
+    }
+
+    .hero-content{
+        padding:2rem;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:1.1rem;
+        padding-bottom:2rem;
+    }
+
+    .hero-content .btn{
+        display:inline-block;
+        padding:.8rem 2rem;
+    }
+
+    /* Benefits */
+
+    .benefit{
+        height:auto;
+        padding:2rem 1rem;
+    }
+
+    .card-benefit{
+        position:static;
+        display:grid;
+        grid-template-columns:1fr;
+        gap:.8rem;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    .card-benefit p{
+        text-align:center;
+    }
+
+    /* Services */
+
+    .services{
+        padding:2rem 1rem;
+    }
+
+    .short-dev{
+        flex-direction:column;
+        text-align:center;
+        gap:1rem;
+    }
+
+    .short-menu{
+        grid-template-columns:1fr;
+        padding:0;
+    }
+
+    .short-menu figure img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Clients */
+
+    .clients{
+        padding:2rem 1rem;
+    }
+
+    .clients h2{
+        font-size:1.5rem;
+        text-align:center;
+    }
+
+    .clients p{
+        text-align:center;
+    }
+
+    /* Gallery Buttons */
+
+    .gallery-btn{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:.8rem;
+        padding:1rem 1rem;
+    }
+
+    .gallery-btn .btn{
+        padding:.7rem 1rem;
+        font-size:.95rem;
+    }
+
+    /* Gallery */
+
+    .grid-gallery{
+        grid-template-columns:1fr;
+        padding:1rem;
+    }
+
+    .grid-gallery .gallery-img img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
+     services-menu .card-section .service-img img{
+       width:100%;
+        max-width:100%;
+        height:auto;
+
+    }
+
+    /* Footer */
+
+    footer{
+        display:block;
+    }
+
+    footer .info{
+        display:grid;
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:2rem;
+        padding:2rem 1rem;
+    }
+
+    footer .media{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    footer .right{
+        text-align:center;
+        padding:1rem;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL PHONES (480px)
+========================================================== */
+
+@media screen and (max-width:480px){
+
+    .logo{
+        width:140px;
+    }
+
+    .hero{
+        height:60vh;
+    }
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .hero-content .btn{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    .services h2,
+    .clients h2{
+        font-size:1.5rem;
+    }
+     services-menu .card-section{
+        grid-template-columns: 1fr;
+    }
+     services-menu .card-section .service-img img{
+       width:100%;
+        max-width:100%;
+        height:auto;
+
+    }
+    .gallery-btn{
+        gap:.5rem;
+    }
+
+    .gallery-btn .btn{
+        width:25%;
+    }
+
+}

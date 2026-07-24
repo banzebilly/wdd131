@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table practice</title>
+    <style>
+
+:root {
+	--back: hsla(150, 50%, 30%, 1);
+  --back2: hsla(150, 50%, 30%, .5);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
+
+
+       table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200 200 200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            margin: 0 auto;
+        }
+        th{
+            background: gray;
+            color: white;
+        }
+       td,
+        th {
+            border: 1px solid rgb(190 190 190);
+            padding: 10px 20px;
+            
+        }
+        tfoot td{
+            background: rgb(0, 4, 255);
+            color: white; text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>inventory sales</h1>
+    <table>
+       <thead>
+       
+            <tr>
+                <th>monday</th>
+                <th>tuesday</th>
+                <th>wedsday</th>
+                <th>thursday</th>
+                <th>friday</th>
+                <th>saturday</th>
+                <th>sunday</th>
+            </tr>
+        
+       </thead>
+        <tbody>
+            <tr>
+                <td >400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+                <td>400</td>
+            </tr>
+     
+            
+        </tbody>
+
+        <tfoot>
+            <tr> 
+                <td colspan="2">tax</td>
+                <td >20%</td>
+
+                <td colspan="3">Sum</td>
+                <td>59595959</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+
+
+    <table>
+        <caption>Concert Table</caption>
+        <thead>
+            <tr>
+                <th scope="col">Artist</th>
+                <th scope="col">Location</th>
+                <th scope="col">Cost</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Billy</td>
+                <td>103 Polly</td>
+                <td>30$</td>
+            </tr>
+            <tr>
+                <!-- <td>Billy</td> -->
+                <td>hildbro</td>
+                <td>40$</td>
+            </tr>
+            <tr>
+                <td>edd0</td>
+                <td>barea</td>
+                <td>34$</td>
+            </tr>
+            <tr>
+                <td>marry</td>
+                <td>randbac</td>
+                <td>50$</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Sum</td>
+                <td>$ 150</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+
+
+
+
+<table>
+	<caption>Table 1: District 🥑 Sales Data</caption>
+	<thead>
+		<tr>
+			<th colspan="2" scope="colgroup">Wasatch Sales</th>
+		</tr>
+		<tr>
+			<th scope="col">Month</th>
+			<th scope="col">Amount</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>July</td>
+			<td>3,000</td>
+		</tr>
+		<tr>
+			<td>August</td>
+			<td class="highlight">8,000</td>
+		</tr>
+		<tr>
+			<td>September</td>
+			<td>4,000</td>
+		</tr>
+		<tr>
+			<td>October</td>
+			<td>3,000</td>
+		</tr>
+		<tr>
+			<td>November</td>
+			<td>2,000</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+</body>
+</html>

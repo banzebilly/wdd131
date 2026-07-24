@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Second form</title>
+  </head>
+  <body>
+    <form action="./payment_page" method="get">
+      <h2>Register for the meetup</h2>
+      <fieldset>
+        <legend>Choose hotel room type:</legend>
+        <div>
+          <input
+            type="radio"
+            id="hotelChoice1"
+            name="hotel"
+            value="economy"
+            checked />
+          <label for="hotelChoice1">Economy (+$0)</label>
+
+          <input type="radio" id="hotelChoice2" name="hotel" value="superior" />
+          <label for="hotelChoice2">Superior (+$50)</label>
+
+          <input
+            type="radio"
+            id="hotelChoice3"
+            name="hotel"
+            value="penthouse"
+            disabled />
+          <label for="hotelChoice3">Penthouse (+$150)</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Choose classes to attend:</legend>
+        <div>
+          <input type="checkbox" id="yoga" name="yoga" />
+          <label for="yoga">Yoga (+$10)</label>
+
+          <input type="checkbox" id="coffee" name="coffee" />
+          <label for="coffee">Coffee roasting (+$20)</label>
+
+          <input type="checkbox" id="balloon" name="balloon" />
+          <label for="balloon">Balloon animal art (+$5)</label>
+        </div>
+      </fieldset>
+      <p>
+        <label for="transport">How are you getting here:</label>
+        <select name="transport" id="transport">
+          <option value="">--Please choose an option--</option>
+          <option value="plane">Plane</option>
+          <option value="bike">Bike</option>
+          <option value="walk">Walk</option>
+          <option value="bus">Bus</option>
+          <option value="train">Train</option>
+          <option value="jetPack">Jet pack</option>
+        </select>
+      </p>
+      <p>
+        <label for="comments">Any other comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+      </p>
+      <p>
+        <button>Continue to payment</button>
+      </p>
+    </form>
+
+             
+
+
+
+
+
+
+
+
+                  <p>input validation</p>
+
+
+
+    <label for="name">Product name:</label>
+<input
+  id="name"
+  name="name"
+  type="text"
+  value="Shampoo"
+  minlength="3"
+  maxlength="20"
+  required />
+
+<label for="description">Product description:</label>
+<textarea
+  id="description"
+  name="description"
+  minlength="10"
+  maxlength="40"
+  required></textarea>
+
+
+
+  <label for="fruit">Enter a fruit name that is at least 5 letters long</label>
+<input type="text" minlength="5" id="fruit" />
+
+<!-- input {
+  border: 2px solid currentColor;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+input:invalid:focus {
+  background-image: linear-gradient(pink, lightgreen);
+} -->
+
+
+<input type="password" maxlength="4" />
+
+
+<label for="firstName">First Name:</label>
+<input id="firstName" name="firstName" type="text" size="10" />
+
+<label for="lastName">Last Name:</label>
+<input id="lastName" name="lastName" type="text" size="20" />
+
+<label for="fruit">Favorite fruit:</label>
+<select id="fruit" name="fruit" size="2">
+  <option>Orange</option>
+  <option>Banana</option>
+  <option>Apple</option>
+</select>
+
+
+
+
+
+
+
+
+<label for="fruit">Enter a fruit</label>
+<input type="text" size="15" id="fruit" />
+<label for="vegetable">Enter a vegetable</label>
+<input type="text" id="vegetable" />
+
+<select name="fruits" size="1">
+  <option>banana</option>
+  <option>cherry</option>
+  <option>strawberry</option>
+  <option>durian</option>
+  <option>blueberry</option>
+</select>
+
+<select name="vegetables" size="5">
+  <option>carrot</option>
+  <option>cucumber</option>
+  <option>cauliflower</option>
+  <option>celery</option>
+  <option>collard greens</option>
+</select>
+  </body>
+</html>
