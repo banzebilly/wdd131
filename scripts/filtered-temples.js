@@ -175,3 +175,4 @@ document.querySelector("#small").addEventListener("click", () => {
 });
 
 // I have to spend more time on javascripts it awasome I can build powerful site
+// I have to spend more time on javascripts it awasome I can build powerful site
