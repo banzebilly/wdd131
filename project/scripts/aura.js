@@ -16,7 +16,7 @@ const gallery = [
     category: "massage",
     title: "Hot stone",
     subtitle: "Massage",
-    image: "images/hotstone-5.webp"
+    image: "images/hotstone-massage.webp"
 },
 
 {
@@ -29,7 +29,7 @@ const gallery = [
     category: "massage",
     title: "deep tissue",
     subtitle: "Massage",
-    image: "images/deep-tissue-2.webp"
+    image: "images/deep-tissue-5.webp"
 },
 
 {
@@ -106,7 +106,7 @@ function displayGallery(items){
                 width="800"
                 height="800">
 
-            <figcaption>
+            <figcaption class="flex">
                 <p>${item.title}</p>
                 <p>${item.subtitle}</p>
             </figcaption>
