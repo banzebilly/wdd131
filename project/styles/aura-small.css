@@ -214,6 +214,10 @@
         height:auto;
         padding:2rem 1rem;
     }
+    .self-story h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
     .card-benefit{
         position:static;
