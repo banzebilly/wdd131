@@ -152,13 +152,14 @@
         color: var(--primary);
         font-size:2rem;
         cursor:pointer;
+        padding-right: 1.3rem;
     }
 
     nav{
         display:none;
         grid-column:1/-1;
         flex-direction:column;
-        background:var(--orange);
+        background: var(--section-bg);
         width:100%;
     }
 
@@ -321,15 +322,65 @@
         max-width:100%;
         height:auto;
     }
+    .services-menu{
+        width: 100%;
+    }
 
-     services-menu .card-section .service-img img{
-       width:100%;
+    .services-menu .card-section .service-img img{
+        width:100%;
         max-width:100%;
-        height:auto;
+       
+
+    }
+   
+    .services-menu .card-section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 2rem;
+    
+        background: var(--background);
+     
+    }
+    .services-menu .image-data{
+    width: 100%;
+    
+
+    }
+    .services-menu .info .inner-data {
+    
+    padding-right: 1rem;
+    width: 100%;
 
     }
 
-    /* Footer */
+      .thank, .appointment{
+        width: 100%;
+        padding: 1.2rem;
+    }
+   
+   
+
+    .studio-addr{
+        width: 100%;
+        padding-right: 1.2rem;
+    }
+   
+
+    
+    .contact .contact-info{
+        padding: 1.5rem 0.2rem
+    }
+
+
+    .thank, .appointment{
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .appointment a{
+        margin-bottom: 2rem;
+    }
+    
 
     footer{
         display:block;
@@ -364,6 +415,7 @@
 
     .logo{
         width:140px;
+        padding-left: 10px;
     }
 
     .hero{
@@ -388,21 +440,55 @@
     .clients h2{
         font-size:1.5rem;
     }
-     services-menu .card-section{
-        grid-template-columns: 1fr;
+     .services-menu{
+        width: 100%;
     }
-     services-menu .card-section .service-img img{
+    .services-menu .card-section{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+     
+    }
+    .card-section .info .inner-data{
+       width:350px;
+       padding: 2rem;
+
+    }
+    .services-menu .card-section .service-img img{
        width:100%;
         max-width:100%;
         height:auto;
 
     }
+    .book{
+        width: 100%;
+        padding: 1rem;
+    }
+    .book .book-section{
+        display: block;
+        
+        padding: 1.3rem;
+}
     .gallery-btn{
         gap:.5rem;
     }
 
     .gallery-btn .btn{
-        width:25%;
+        width:30%;
+    }
+    .mission .objective{
+        width: 100%;
+        flex-direction: column;
+    }
+    .mission .objective h4,
+    .mission .objective p {
+
+        width: 100%;
+        color: var(--section-bg);
+    }
+
+    .form-content{
+        width: 100%;
+        
     }
 
 }
