@@ -297,6 +297,15 @@
         font-size:1.8rem;
         padding:0;
     }
+    .team-grid{
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+
+    }
+    .team-grid .more,
+    .team-grid .info-m{
+        padding: 1rem;
+    }
 
 
     /* Gallery Buttons */
@@ -416,6 +425,11 @@
 ========================================================== */
 
 @media screen and (max-width:480px){
+    header,
+    main,
+    footer{
+        width:100%;
+    }
 
     .logo{
         width:140px;
