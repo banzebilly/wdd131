@@ -298,15 +298,19 @@
         padding:0;
     }
     .team-grid{
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 1.2rem;
+        padding: 1.2rem;
 
     }
     .team-grid .more,
     .team-grid .info-m{
         padding: 1rem;
+        margin: 1.4rem;
     }
 
+   
 
     /* Gallery Buttons */
 
@@ -508,5 +512,21 @@
         width: 100%;
         
     }
+
+
+
+    .team-grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        
+
+    }
+    .team-grid .more,
+    .team-grid .info-m{
+       
+        padding-right: 1rem;
+    }
+
 
 }
