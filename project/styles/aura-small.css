@@ -80,10 +80,7 @@
         padding: 1rem;
     }
 
-    .mission .objective h1 {
-        font-size: 2rem;
-        
-    }
+ 
 
     /* ---------- Team ---------- */
 
@@ -316,11 +313,7 @@
     .mission .objective h1{
         font-size:1.8rem;
     }
-    .mission .objective p{
-        max-width: 350px;
-        width: 100%;
-        margin: 0 auto;
-    }
+    
 
     /* ---------- Team ---------- */
 
