@@ -305,6 +305,7 @@
    .mission{
     width: 100%;
     min-height: 400px;
+   
    }
 
     .mission .objective{
@@ -315,6 +316,11 @@
 
     .mission .objective h1{
         font-size:1.8rem;
+        
+    }
+    .mission .objective p{
+        padding-bottom: 2rem;
+        
     }
     
 
