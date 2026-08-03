@@ -302,9 +302,10 @@
 
     /* ---------- Mission ---------- */
 
-    .mission{
-        min-height:450px;
-    }
+   .mission{
+    width: 100%;
+    min-height: 400px;
+   }
 
     .mission .objective{
         padding:2rem 1rem;
