@@ -339,13 +339,18 @@ nav a:hover {
    
    
 }
-.mission .objective h4,
-.mission .objective p {
+.mission .objective h4{
     text-align: center;
     color: var(--background);
-    padding: 1rem;
-    line-height: 1.5;
-    letter-spacing: 2px
+    padding: .8rem;
+    font-size:1.8rem;
+}
+
+.mission .objective p {
+   
+   align-items: center;
+    letter-spacing: 2px;
+    color: var(--li-bg);
 
 }
 
