@@ -305,14 +305,17 @@
    .mission{
     width: 100%;
     min-height: 400px;
-   
+    margin: 3rem auto;
+    overflow: hidden;
    }
 
     .mission .objective{
-        padding:2rem 1rem;
+        padding:1rem 1rem;
         justify-content: center;
         flex-wrap: wrap;
+        margin: auto;
     }
+  
 
     .mission .objective h1{
         font-size:1.8rem;
