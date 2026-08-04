@@ -80,7 +80,7 @@ h3{
 
 .btn:hover{
     background:var(--orange);
-    color:var(--foreground);
+    color:var(--white);
 }
 
 header, main, footer {
@@ -555,9 +555,8 @@ nav a:hover {
    
     background: var(--primary);
     color: var(--white);
-    
-
 }
+
 
 .grid-gallery{
     display:grid;
@@ -703,6 +702,15 @@ nav a:hover {
     text-transform:uppercase;
     letter-spacing:2px;
     margin: 2rem 2%;
+    transition:.3s;
+   
+    
+
+}
+.user-grid button:hover{
+    background: var(--orange);
+    color: var(--muted);
+
     
 
 }
