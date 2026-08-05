@@ -68,6 +68,7 @@
 
             <video autoplay muted loop playsinline class="hero-video">
                 <source src="images/massage-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
 
             <div class="overlay"></div>
@@ -128,7 +129,7 @@
     <div class="form-content">
         <h3>Request an Appointment</h3>
 
-        <form  id="appointmentForm" >
+        <form  id="appointmentForm" method="post" action="" >
             
 
             <div class="user-grid">
@@ -221,51 +222,60 @@
         </section>
 
     </main>
+<footer>
+    <div class="info">
+        <div class="main">
+            <p>Wellness Studio</p>
+            <p>Relax • Refresh • Renew</p>
+        </div>
 
-    <footer>
-        <div class="info">
-            <div class="main">
-                <p>
-                    Wellness Studio           
-                </p>
-                <p>Relax • Refresh</p>
-                <p> Renew </p>
-            </div>
-            <div class="main">
-                <h4>Quik Links</h4>
-               <a href="index.html">home</a>
-               <a href="services.html">Services</a>
-               <a href="gallery.html">Gallery</a>
-               <a href="about.html">About</a>
-               <a href="contact.html">Contact</a>
-              
-            </div>
-            <div class="main">
-                  <h4>visit US</h4>
-                  <p>jahannesburg</p>
-                  <p>+27 835999310</p>
-                  
-            </div>
-            <div class="main">
-                 <h4>Business Hours</h4>
-                 <p>Mo-Fri <span>9-6</span></p>
-                 <p>Sat  <span>9-4</span></p>
-                 <p>Sun <span>closed</span></p>
-            </div>
+        <div class="main">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
         </div>
-        <div class="media">
-            <a href=""><img src="images/facebook.svg" alt="facebook icon" width="30" height="30" loading="lazy"></a>
-            <a href=""><img src="images/instagram.svg" alt=" instagram" width="30" height="30" loading="lazy"></a>
-            <a href=""><img src="images/tiktok.svg" alt="tiktok icon"width="30" height="30"width="30" height="30" loading="lazy"></a>
+
+        <div class="main">
+            <h4>Visit Us</h4>
+            <p>Johannesburg</p>
+            <p>+27 83 599 9310</p>
         </div>
-        <div class="right">
-             <p>
-            &copy;
-            <span id="currentyear"></span>
-            Mulopwe Banze Billy | South Africa /Aura Wellness Studio. All rights reserved
+
+        <div class="main">
+            <h4>Business Hours</h4>
+            <p>Mon-Fri <span>9:00 AM - 6:00 PM</span></p>
+            <p>Sat <span>9:00 AM - 4:00 PM</span></p>
+            <p>Sun <span>Closed</span></p>
+        </div>
+    </div>
+
+    <div class="media">
+        <a href="#" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook icon" width="30" height="30" loading="lazy">
+        </a>
+
+        <a href="#" aria-label="Instagram">
+            <img src="images/instagram.svg" alt="Instagram icon" width="30" height="30" loading="lazy">
+        </a>
+
+        <a href="#" aria-label="TikTok">
+            <img src="images/tiktok.svg" alt="TikTok icon" width="30" height="30" loading="lazy">
+        </a>
+    </div>
+
+    <div class="right">
+        <p>
+            &copy; <span id="currentyear"></span>
+            Mulopwe Banze Billy | South Africa | Billy Aura Wellness Studio. All rights reserved.
         </p>
-        </div>
-    </footer>
+
+        <p id="lastModified"></p>
+    </div>
+</footer>
 </body>
 </html>
 

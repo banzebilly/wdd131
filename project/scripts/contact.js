@@ -2,24 +2,23 @@ const form = document.querySelector("#appointmentForm");
 
 if (form) {
 
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", (event) => {
 
         event.preventDefault();
 
         const appointment = {
-            firstName: firstName.value,
-            email: email.value,
-            phone: phone.value,
-            service: service.value,
-            date: date.value,
-            time: time.value,
-            notes: notes.value
+            firstName: document.querySelector("#firstName").value,
+            email: document.querySelector("#email").value,
+            phone: document.querySelector("#phone").value,
+            service: document.querySelector("#service").value,
+            date: document.querySelector("#date").value,
+            time: document.querySelector("#time").value,
+            notes: document.querySelector("#notes").value
         };
 
         localStorage.setItem("appointment", JSON.stringify(appointment));
 
         window.location.href = "thanks.html";
-
     });
 
 }

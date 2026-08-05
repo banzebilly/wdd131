@@ -1,4 +1,4 @@
-// ==========menu===========
+// ========== Mobile Menu ==========
 const menuBtn = document.querySelector("#menu");
 const navigationLinks = document.querySelector(".navigation");
 
@@ -9,10 +9,14 @@ if (menuBtn && navigationLinks) {
     });
 }
 
-
+// ========== Footer ==========
 const year = document.querySelector("#year");
 const lastModified = document.querySelector("#lastModified");
 
-year.textContent = new Date().getFullYear();
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
 
-lastModified.textContent = document.lastModified;
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}

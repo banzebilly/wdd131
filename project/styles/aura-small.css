@@ -303,7 +303,7 @@
     /* ---------- Mission ---------- */
 
    .mission{
-    width: 100%;
+   
     min-height: 400px;
     margin: 3rem auto;
     overflow: hidden;
@@ -500,7 +500,7 @@
 
     #menu{
         font-size:1.9rem;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     nav a{
