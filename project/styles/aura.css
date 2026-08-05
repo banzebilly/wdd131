@@ -746,6 +746,7 @@ footer .info p{
 footer .main{
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
     
 }
 footer .main a {
